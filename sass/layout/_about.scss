@@ -1,0 +1,43 @@
+.about {
+  padding-top: 0px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.pic-list {
+  display: flex;
+}
+
+.pic-lis__item {
+  position: relative;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.pic-lis__description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
