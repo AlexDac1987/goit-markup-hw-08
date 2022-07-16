@@ -39,6 +39,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -54,12 +55,8 @@ body {
   text-decoration: none;
 }
 
-.section {
-  padding: 94px 0px;
-}
-
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -432,22 +429,24 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0px;
-  box-sizing: border-box;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .hero__title {
-  width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 auto 30px;
+  margin: auto;
+  font-size: 26px;
+  line-height: 1.62;
 }
 
 .hero__button {
@@ -707,22 +706,24 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0px;
-  box-sizing: border-box;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .hero__title {
-  width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 auto 30px;
+  margin: auto;
+  font-size: 26px;
+  line-height: 1.62;
 }
 
 .hero__button {
