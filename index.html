@@ -62,15 +62,15 @@
       </div>
     </header> -->
     <main>
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
-      <!-- <section class="advantages section">
+      </section>
+      <section class="advantages section">
         <div class="container benefits">
           <ul class="benefits-list list">
             <li class="benefits-list__item">
@@ -123,8 +123,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="about section">
+      </section>
+      <section class="about section">
         <div class="container">
           <h2 class="about__title">Чем мы занимаемся</h2>
           <ul class="pic-list list">
@@ -157,23 +157,42 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-pics">
-              <img
-                class="team-photo"
-                srcset="
-                  ./images/team-img-1.jpg    1x,
-                  ./images/team-img-1-2x.jpg 2x
-                "
-                src="images/team-img-1.jpg"
-                alt="Наши фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img-1-desc.jpg    1x,
+                    ./images/team-img-1-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-1-tab.jpg    1x,
+                    ./images/team-img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-1-mob.jpg    1x,
+                    ./images/team-img-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team-img-1-mob.jpg"
+                  alt="Наши фото"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-list-item">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list-position">Product Designer</p>
@@ -210,17 +229,36 @@
               </div>
             </li>
             <li class="team-list-pics">
-              <img
-                class="team-photo"
-                srcset="
-                  ./images/team-img-2.jpg    1x,
-                  ./images/team-img-2-2x.jpg 2x
-                "
-                src="./images/team-img-2.jpg"
-                alt="Наши фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img-2-desc.jpg    1x,
+                    ./images/team-img-2-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-2-tab.jpg    1x,
+                    ./images/team-img-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-2-mob.jpg    1x,
+                    ./images/team-img-2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team-img-2-mob.jpg"
+                  alt="Наши фото"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-list-title">
                 <h3 class="team-list-item">Ольга Репина</h3>
                 <p lang="en" class="team-list-position">Frontend Developer</p>
@@ -257,17 +295,36 @@
               </div>
             </li>
             <li class="team-list-pics">
-              <img
-                class="team-photo"
-                srcset="
-                  ./images/team-img-3.jpg    1x,
-                  ./images/team-img-3-2x.jpg 2x
-                "
-                src="./images/team-img-3.jpg"
-                alt="Наши фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img-3-desc.jpg    1x,
+                    ./images/team-img-3-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-3-tab.jpg    1x,
+                    ./images/team-img-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-3-mob.jpg    1x,
+                    ./images/team-img-3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team-img-3-mob.jpg"
+                  alt="Наши фото"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-list-title">
                 <h3 class="team-list-item">Николай Тарасов</h3>
                 <p lang="en" class="team-list-position">Marketing</p>
@@ -304,16 +361,36 @@
               </div>
             </li>
             <li class="team-list-pics">
-              <img
-                srcset="
-                  ./images/team-img-4.jpg    1x,
-                  ./images/team-img-4-2x.jpg 2x
-                "
-                src="./images/team-img-4.jpg"
-                alt="Наши фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-img-4-desc.jpg    1x,
+                    ./images/team-img-4-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-4-tab.jpg    1x,
+                    ./images/team-img-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img-4-mob.jpg    1x,
+                    ./images/team-img-4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team-img-4-mob.jpg"
+                  alt="Наши фото"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-list-title">
                 <h3 class="team-list-item">Михаил Ермаков</h3>
                 <p lang="en" class="team-list-position">UI Designer</p>
@@ -352,7 +429,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="clients-container container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -394,7 +471,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="backdrop is-hidden" data-modal>
